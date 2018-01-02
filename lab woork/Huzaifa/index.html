@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBHGFx8N2JANGtrhTny49zn_35dMv7esKI",
+            authDomain: "testproject-94aad.firebaseapp.com",
+            databaseURL: "https://testproject-94aad.firebaseio.com",
+            projectId: "testproject-94aad",
+            storageBucket: "testproject-94aad.appspot.com",
+            messagingSenderId: "295784371321"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: lightcyan;;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="col-sm-6">
+            <h1 class="text-center text-primary">Sign Up</h1>
+            <div class="input-group">
+                <input id="fname" type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <input id="lname" type="text" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <input id="cell" type="text" class="form-control" placeholder="Cell No" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <input id="age" type="text" class="form-control" placeholder="Age" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <input id="userName" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <br>
+            <div class="input-group">
+                <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="password" class="form-control" placeholder="Password" id="pass" aria-describedby="basic-addon3">
+            </div><br>
+            <button style="border: 1px solid black" class="btn btn-primary" onclick="submit()">Sign Up</button>
+        </div>
+    </div>
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

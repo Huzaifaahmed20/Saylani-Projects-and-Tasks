@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBHGFx8N2JANGtrhTny49zn_35dMv7esKI",
+            authDomain: "testproject-94aad.firebaseapp.com",
+            databaseURL: "https://testproject-94aad.firebaseio.com",
+            projectId: "testproject-94aad",
+            storageBucket: "testproject-94aad.appspot.com",
+            messagingSenderId: "295784371321"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<body>
+    <form class="form-signin" id="stop">
+        <div class="container">
+            <div class="col-sm-6">
+                <h1 class="text-center text-primary">Login</h1>
+                <div class="input-group">
+                    <input id="inputemail" type="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="password" class="form-control" placeholder="Password" id="inputpass" aria-describedby="basic-addon3">
+                </div>
+                <button class="btn btn-primary">Log In</button>
+            </div>
+        </div>
+    </form>
+    <script src="login.js">
+
+    </script>
+</body>
+
+</html>
